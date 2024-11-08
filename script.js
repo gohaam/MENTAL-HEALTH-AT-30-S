@@ -1,9 +1,11 @@
+// fungsi untuk treatmentpage
 document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll(".card-content");
     const infoBox = document.getElementById("info-box");
     const infoTitle = document.getElementById("info-title");
     const infoDescription = document.getElementById("info-description");
-    const buttonsContainer = infoBox.querySelector(".box-button"); // Ganti ke .box-button
+    const buttonsContainer = infoBox.querySelector(".box-button");
+    const bacaArtikelButton = buttonsContainer.querySelector(".btn-outline-dark:nth-child(1)");
 
     // Awalnya sembunyikan tombol
     buttonsContainer.style.display = "none";
@@ -16,15 +18,21 @@ document.addEventListener("DOMContentLoaded", function() {
             // Tambahkan status aktif ke kartu yang diklik
             card.classList.add("active");
 
-            // Ambil data title dan description dari kartu yang diklik
+            // Ambil data title, description, dan wiki dari kartu yang diklik
             const titleText = card.getAttribute("data-title");
             const descriptionText = card.getAttribute("data-description");
+            const wikiUrl = card.getAttribute("data-artikel");
 
             // Tampilkan title dan description di infoBox
             infoTitle.textContent = titleText;
             infoDescription.textContent = descriptionText;
             infoBox.style.display = "block";
             buttonsContainer.style.display = "flex";  // Tampilkan tombol
+
+            // Setel URL pada tombol "Baca Artikel"
+            bacaArtikelButton.onclick = () => {
+                window.open(wikiUrl, "_blank");
+            };
         });
     });
 
@@ -37,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// end fungsi treatment
 
 //fungsi snackbar
 function showSnackbar(messages, type) {
@@ -67,3 +77,7 @@ function showSnackbar(messages, type) {
     displayMessage(0);
 };
 
+// fungsi resultpage
+document.getElementById('btn-home').addEventListener('click', function () {
+    window.location.href = 'landingpage.php';
+});

@@ -39,7 +39,7 @@ $result = mysqli_query($koneksi, $sql);
 </section>
 
 <section>
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
         <div class="container bg-white mt-5 p-3" style="width: 70%; border-radius: 15px;">
             <div class="container mt-5 mb-5 p-3" style="width: 80%; background-color: #D9D9D9; border-radius: 10px;">
                 <p>
@@ -72,7 +72,7 @@ $result = mysqli_query($koneksi, $sql);
                         <?php endwhile; ?>
                     </ol>
                 </div>
-                <div class="container mt-5" style="justify-content: center; align-items: center; display: flex; gap: 40px;">
+                <div class="container mb-5" style="justify-content: center; align-items: center; display: flex; gap: 40px;">
                     <a href="layananpage.php" type="button" class="btn btn-primary btn-lg" style="background-color: #FF9292; width: 50vh; color: black;">Sebelumnya</a>
                     <button type="submit" name="submit" class="btn btn-primary btn-lg" style="background-color: #FF9292; width: 50vh; color: #000;">Kirim</button>
                 </div>
@@ -80,3 +80,6 @@ $result = mysqli_query($koneksi, $sql);
         </div>
     </div>
 </section>
+<?php 
+    include './inc/inc_footer.php'; 
+?>

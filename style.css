@@ -151,7 +151,8 @@ nav {
     font-size: 70px;
 }
 
-.tag-feeling {
+.tag-feeling,
+.tag-feeling a {
     font-family: "Kreon", serif;
 }
 
@@ -174,24 +175,28 @@ nav {
     gap: 25px;
 }
 
-.card {
+.card-content {
+    background-color: white;
     border-radius: 15px;
-    width: 7rem;
+    min-width: 6rem;
     height: 10rem;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
+
+.card-content img {
+    border-radius: 15px;
     height: 4.5rem;
     width: 4.5rem;
 }
 
-.card:hover,
+.card-content:hover,
 .active {
     border: 2px solid #BB8446;
     transform: scale(1.1);
@@ -204,13 +209,14 @@ nav {
 }
 
 /* layanan page */
-.required-dot{
+.required-dot {
     color: red;
 }
 
 .form-group-layanan label {
     display: block;
-    margin-bottom: 8px; /* Menambah jarak antar label dan input */
+    margin-bottom: 8px;
+    /* Menambah jarak antar label dan input */
     color: grey;
 }
 
@@ -220,3 +226,47 @@ nav {
 }
 
 /* end layanan page */
+
+/* klinikpage */
+.profile-card {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.tag-psikolog {
+    font-family: "Milonga", serif;
+    font-size: 70px;
+}
+
+/* end klinikpage*/
+
+/* lihatprofile */
+.container-profile {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.picture-view {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* end lihatprofile */

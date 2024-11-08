@@ -43,10 +43,10 @@
     </script>
 </head>
 
-<body style="background: url(assets/vertical-grayscale-shot-urban-area-with-many-high-rise-buildings-different-shapes\ 1.png); background-size: cover;">
+<body style="background:url(assets/background.png); background-size: cover;">
     <div id="snackbar" class="snackbar">This is a snackbar alert!</div>
 
-    <div class="jumbotron mt-lg-5" style="background-color: transparent; margin-bottom: 0;">
+    <div class="jumbotron" style="background-color: transparent; margin-bottom: 0;">
         <div class="container-fluid p-5" style="background-color: rgba(0, 0, 0, 0.425); max-width: 80vh; padding: 2vh;">
             <div class="container">
                 <h3 class="text-center mt-md-2" style="color: #fff;"><b>LOGIN</b></h3>

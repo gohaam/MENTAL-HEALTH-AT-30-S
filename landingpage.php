@@ -3,7 +3,7 @@
     include './inc/inc_header.php'; 
 ?>
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid mb-5">
             <div class="row mt-5">
                 <div class="col-md-5"
                     style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
@@ -64,20 +64,12 @@
                     <p style="width: 70%;">
                         We take data-driven decisions around your wellbeing strategy.
                     </p>
-                    <a href="logout.php" type="button" class="btn btn-dark mt-3" style="border-radius: 25px; background-color: black;">Get Help ></a>
+                    <a href="" type="button" class="btn btn-dark mt-3 mr-3" style="border-radius: 25px; background-color: black;">Get Help ></a>
+                    <a href="logout.php" type="button" class="btn btn-dark mt-3" style="border-radius: 25px; background-color: black;">Logout ></a>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
+<?php 
+    include './inc/inc_footer.php'; 
+?>
